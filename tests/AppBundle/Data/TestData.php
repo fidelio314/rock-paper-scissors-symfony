@@ -42,16 +42,15 @@ class TestData
     /**
      * createPlayerHistory
      */
-    public function createPlayerHistory()
+    public function createPlayerHistory($username = 'obi')
     {
         $signSequence = $this->getTestSignSequence();
-        $username = 'obi';
         foreach ( $signSequence as $sign) {
             //create History of player
             $playerHistory = new PlayerHistory();
             $playerHistory
                 ->setUsername($username)
-                ->setSign(Sign::ROCK);
+                ->setSign($sign);
             $this->em->persist($playerHistory);
         }
         $this->em->flush();

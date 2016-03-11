@@ -29,6 +29,8 @@ class RoundType extends AbstractType
                 )
             )
             ->add('sign', ChoiceType::class, array(
+                'expanded' => true,
+                'multiple' => false,
                 'choices'  => array(
                     Sign::ROCK => Sign::ROCK,
                     Sign::PAPER => Sign::PAPER,

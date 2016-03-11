@@ -47,6 +47,7 @@ class SignManager
      */
     public function getRandomSign($mode = Game::MODE_EASY, $username = null)
     {
+        $signVictim = false;
         if ($mode == Game::MODE_EXPERT && $username) {
             //get round sign history array by username
             $historySignArray = $this->getPlayerHistory($username);

@@ -15,5 +15,3 @@
 /vendor/
 /web/bundles/
 .idea*
-app/data/sqlite.db
-app/data/sqlite_test.db

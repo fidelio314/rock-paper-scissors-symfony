@@ -41,6 +41,15 @@ class RoundResult
         }
         return null;
     }
+    /**
+     * getRoundData
+     * 
+     * @return array
+     */
+    public function getRoundData()
+    {
+        return $this->roundData;
+    }
 
     /**
      * set winner

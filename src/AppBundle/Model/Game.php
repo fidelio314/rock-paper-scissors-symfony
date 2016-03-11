@@ -163,9 +163,6 @@ class Game
 
     public function setTimestamp(\DateTime $timestamp = null)
     {
-//        if (!$timestamp) {
-//            $timestamp = new \DateTime();
-//        }
         $this->timestamp = time();
 
         return $this;
